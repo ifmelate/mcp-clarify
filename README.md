@@ -6,6 +6,9 @@ A minimal Model Context Protocol (MCP) server that enables AI agents to ask clar
 
 This MCP server exposes a single tool `ask_clarification` that allows AI agents to ask structured questions and receive user input via MCP elicitation. It's compatible with MCP clients like Cursor, VS Code, Claude Desktop, and other MCP-enabled tools.
 
+# DEMO VIDEO:
+[![Watch the video](https://github.com/user-attachments/assets/d4a4bf64-091e-4ac1-a52c-5fa20fcd48d6)](https://youtu.be/LmDIg50aGk4?si=n_X9oLd781thRUCo)
+
 ## Features
 
 - **Simple Question-Answer Interface**: Ask clarification questions and get concise answers
