@@ -1,0 +1,44 @@
+[project]
+name = "mcp-clarify"
+version = "0.1.0"
+description = "A minimal MCP server for AI agents to ask clarification questions and get structured user input"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "ifmelate", email = "ifmelate@users.noreply.github.com"}
+]
+keywords = ["mcp", "model-context-protocol", "hitl", "human-in-the-loop", "ai", "llm", "clarification", "user-input"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "fastmcp>=0.1.0",
+    "pydantic>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/ifmelate/mcp-clarify"
+Repository = "https://github.com/ifmelate/mcp-clarify"
+Issues = "https://github.com/ifmelate/mcp-clarify/issues"
+
+[project.scripts]
+mcp-clarify = "hitl_server:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["hitl_server"]
+
